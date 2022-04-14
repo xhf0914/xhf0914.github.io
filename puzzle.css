@@ -7,7 +7,7 @@ body {
   }
 
 p{
-  font-size: 20px;
+  font-size: 18px;
   width: 800px;
   background-color: #E1C4C4;
   display: inline-block;
@@ -18,7 +18,7 @@ p{
     font-size: 30px;
     background-color:#C48888;
     text-align: center;
-    padding:20px;
+    padding:15px;
     font-family:sans-serif;}
 
 
@@ -26,12 +26,12 @@ p{
         background-color:#B87070;
         border: none;
         color: white;
-        padding: 14px 25px;
+        padding: 10px 20px;
         text-align: center;
         text-decoration: none;
         border-radius:30px;
         display: inline-block;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .question{
