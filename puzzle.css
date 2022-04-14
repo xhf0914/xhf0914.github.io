@@ -17,7 +17,7 @@ p{
   #title{
     background-color:#C48888;
     text-align: center;
-    padding:30px;
+    padding:20px;
     font-family:sans-serif;}
 
 
@@ -30,7 +30,7 @@ p{
         text-decoration: none;
         border-radius:30px;
         display: inline-block;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .question{
