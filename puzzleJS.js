@@ -12,7 +12,7 @@ playerName()
 
 function enterAnswer(){
     while (x===1) {
-      var answer=prompt("Your answer is（Please imput an uppercase letter）：");
+      var answer=prompt("Your answer is（Please input an uppercase letter）：");
       if(answer===ans[curi]){
         alert("Congradulations! Your answer is correct!");
         score++;
