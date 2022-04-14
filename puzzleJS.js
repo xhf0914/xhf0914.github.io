@@ -18,6 +18,8 @@ function enterAnswer(){
         score++;
         x=0
         }
+      else if(answer===null){
+        break;}
       else{
         alert("Sorry, " + answer + " is not the correct answer，Have another try！");
           }
