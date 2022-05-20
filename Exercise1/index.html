@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="puzzleJS.js"></script>
+  <link rel="stylesheet" href="puzzle.css">
+  <meta charset="utf-8">
+  <title>Puzzle</title>
+</head>
+<body>
+  <h1 id="title"> Puzzle Game </h1>
+<p>
+Here are the rules:<br>
+1、There are 5 questions in total.<br>
+2、One point for each question, and the full mark is 5.<br>
+3、You can always pass the question if you can't solve it.<br>
+4、Click the 'NEXT' button to move on.<br>
+5、Click the 'FINISH' button to finish the game and see your score.
+</p>
+
+<div class="main">
+      <div id="img0" style="display:block;"><p class="question">Q1</p><br><img src="1.png"width="390" height="330" /></div>
+      <div id="img1" style="display:none;"><p class="question">Q2</p><br><img src="2.png"width="390" height="330" /></div>
+      <div id="img2" style="display:none;"><p class="question">Q3</p><br><img src="3.png"width="390" height="330" /></div>
+      <div id="img3" style="display:none;"><p class="question">Q4</p><br><img src="4.png"width="390" height="330" /></div>
+      <div id="img4" style="display:none;"><p class="question">Q5</p><br><img src="5.png"width="390" height="330" /></div>
+</div>
+<br>
+  <button class="button" onclick="enterAnswer()">ANSWER</button>
+  <button class="button" onclick="getAnswer()">SEE THE CORRECT ANSWER </button>
+  <button class="button" onclick="next()">NEXT</button>
+  <button class="button" onclick="finish()">FINISH</button>
+<br>
+<footer>Made by Ann XuHanfeng in the second semester of her sophermore year.<br>
+Homework of the course Creative Interaction Design and Technologies<br>
+Made in 2022.4
+<br>
+<br>
+</body>
+</html>
