@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 国内 Staticfile CDN 上的 Bootstrap5 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+
+    <title>舞剧</title>
+  </head>
+
+<!---这是导航栏-->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+            <img class=site-logo src="logo.png" width="50">
+        舞剧
+    </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav" >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">主页</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">舞台演出
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="musical.html">音乐剧</a></li>
+                <li><a class="dropdown-item" href="dance.html">舞剧</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="livehouse.html">Livehouse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="festival.html">音乐节</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <body>
+
+    <!---这是轮播图-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="#dianbo">
+              <img src="dan-dianbo0.jpg" class="d-block w-100" >
+            </a>
+              <div class="carousel-caption d-none d-md-block">
+            <h1>永不消逝的电波</h1>
+            <h5>上海歌舞团</h5>
+          </div>
+            </div>
+            <div class="carousel-item">
+                <a href="#zh">
+              <img src="dan-zh0.jpg" class="d-block w-100" >
+            </a>
+              <div class="carousel-caption d-none d-md-block">
+            <h1>朱鹮</h1>
+            <h5>上海歌舞团</h5>
+          </div>
+            </div>
+            <div class="carousel-item">
+              <a href="#jysc">
+                <img src="dan-jysc2.jpg" class="d-block w-100" >
+            </a>
+              <div class="carousel-caption d-none d-md-block">
+            <h1>记忆深处</h1>
+            <h5>江苏省演艺集团歌剧舞剧院</h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <br>
+
+<!---这是面包屑导航和菜单--->
+        <div class="container-fluid padding" align="center">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">主页</a></li>
+            <li class="breadcrumb-item active" aria-current="page">舞剧</li>
+          </ol>
+        </nav>
+      </div>
+
+      <main class="bd-main order-1">
+
+          <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+            <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+            <nav id="TableOfContents">
+              <ul>
+                <li><a href="#dianbo">《永不消逝的电波》</a></li>
+                <li><a href="#zh">《朱鹮》</a></li>
+                <li><a href="#jysc">《记忆深处》</a></li>
+                <li><a href="#wz">我喜欢的舞者</a></li>
+              </ul>
+      </nav>
+          </div>
+
+
+
+      <!--- Two Column Section*4 -->
+        <div class="container-fluid padding" align="center">
+	         <h1 id=dianbo class="display-4" >永不消逝的电波</h1><br>
+           <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapseExample">
+             点击展开剧目简介
+           </button>
+         </p>
+         <div class="collapse" id="collapse1">
+           <h4 class="fl">“长河无声奔去，唯爱与信念永存”</h4>
+           <p>上海街头，雨夜。<br>
+           李侠与兰芳假扮夫妻，开启12年的潜伏生涯......<br>
+           每一天，行走在刀锋，每一晚，秘密情报传送千里。<br>
+           一重重伪装，藏起疲惫，眺望曙光。<br>
+           解放前夕，黎明降至，夜色更加阴冷。<br>
+           李侠的身边，无数的敌人步步逼近，无数战友消失在疾风骤雨。<br>
+           报社秘书、摄影记者、裁缝掌柜、小学徒、黄包车夫、社长、卖花女，<br>他们的身份究竟是真是假？<br>
+           无声的枪口，紧张的追逐，闪电撕裂的伤口，吞声饮泪......<br></p>
+           <hr  width="60%">
+            </div>
+        	<div class="row padding">
+        		<div class="col-lg-6" > <br><br> <br><br>
+              <img src="dan-dianbo1.jpg" class="img-fluid">
+        		</div><br>
+            <div class="col-lg-6" align="center">
+                <h2>2020.8.2 上海东方艺术中心</h2>
+                <p>先前在文旅部官网看了官摄，觉得不太过瘾。终于买到了票走进剧场看电波！<br>
+              一部舞剧，仅靠演员的形体表演与音乐灯光等因素配合，<br>
+              却能将“谍战”二字发挥到淋漓尽致。<br><br>
+                  印象深刻的是电梯间试探、雨中追逐、渔光曲、裁缝店几个片段。<br>
+                渔光曲中舞者们身着旗袍，蒲扇轻摇，把上海弄堂女性的优雅和闲适演绎到了极致。  <br>
+                  裁缝店寻找最后一个线索的片段，配合灯光，实在有时空交错的感觉。<br>
+                  李侠的刚毅果敢；兰芬的温婉细腻；<br>
+                  女特务柳妮娜的亮眼，美艳、霸道，飒飒生风。<br>
+                  还有牺牲时颇令人动容的小裁缝，<br>
+                  每个人物形象都是那样立体而饱满。<br><br>
+                  两个小时，静坐于黑暗的剧场中，却彷如经历了一场激荡的生死较量。<br>
+                  这便是剧场的魅力、舞台的魅力，艺术的魅力、戏剧的魅力吧。<br>
+                  热烈奔涌，生生不息。<br>
+                </p>
+              </div>
+                <a class="btn btn-primary" href="https://www.bilibili.com/video/BV1Ky4y1y7XA" role="button">点击查看我拍摄的《永不消逝的电波》返场片段</a>
+        		</div>
+        	<hr class="my-4">
+        </div>
+
+        <div class="container-fluid padding" align="center">
+          <h1  id=zh class="display-4" align="center" >朱鹮</h1><br>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapseExample">
+            点击展开剧目简介
+          </button>
+        </p>
+        <div class="collapse" id="collapse2">
+          <h4 class="fl">为了曾经的失去，呼唤永久的珍惜！</h4>
+          <p>
+          朱鹮，象征幸福吉祥的美丽珍禽，被称为"吉祥之鸟"，纯美、典雅、洁净。<br>
+          这种珍贵的鸟类从久远的农耕时代开始，朱鹮与人类和谐共处、相伴相生；<br>
+          步入近代以来，随着人类在向现代化与城市化的快速奔跑，<br>
+          野生朱鹮繁衍所必须的宁静自然的栖息生态愈加险恶，朱鹮种群濒临绝迹；<br>
+          到了现代，中国陕西洋县7只野生朱鹮的发现，"吉祥之鸟"再次回归人类视线。<br><br>
+          舞剧《朱鹮》是上海歌舞团以朱鹮为题材，<br>启示人类与其他生灵和自然环境休戚与共关系的思考:<br>
+          ————但愿，守望的不只是人类自己的园，而是共同的美好家园。 <br></p>
+          <hr  width="60%">
+        </div>
+          <div class="row padding">
+            <div class="col-lg-6" align="center">
+              <h2>2020.8.27 上海大剧院</h2>
+              <p>坐在舞台靠左的位置，所以好多次都仿佛和演员有眼神交流。<br>
+                无论是欣喜亦或是痛苦都真真切切地展现在眼前。<br>
+                当原本翩翩飞舞的朱鹮无论是姿态还是毛色都因快节奏的人类生活而逐渐恶化，<br>
+                当原本成群结队的美丽鸟儿到最后只剩下了博物馆里的标本，<br>
+                只剩下早已换上现代服装的樵夫手上仅存的一片羽毛，<br>
+                满头白发的樵夫和博物馆里的朱鹮再次跳舞起上幕的舞，再次被群鸟围绕，<br>
+                实在为之动容，深受触动。<br><br>
+
+              每一只朱鹮都实在是好灵动好细腻。<br>
+              高贵的头颅、昂扬的颈部，到柔软的双臂、灵动的指间，<br>
+              再到轻巧的双腿、轻盈的足尖。<br>
+              一齐出现在舞台上的时候更是美轮美奂。<br>
+              会忍不住在观众席上模仿他们的动作。实在是好像鸟啊，佟睿睿导演太会编舞了~<br><br>
+
+              我一直把《朱鹮》视为我最喜欢的舞剧，没有之一。<br>
+              （SD的时候近距离地见到了朱姐和佳俊并获得了签名呜呜呜  好喜欢他们！）
+              <br></p>
+            </div>
+              <div class="col-lg-6"><br><br> <br>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="dan-zh1.jpg." class="img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="dan-zh2.jpg" class="img-fluid">
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+                    </div>
+            </div><br><br>
+            <a class="btn btn-primary" href="https://www.bilibili.com/video/BV1KZ4y1T7iK" role="button">点击查看我拍摄的《朱鹮》返场片段及SD花絮</a>
+          </div>
+          <hr class="my-4">
+        </div>
+
+        <div class="container-fluid padding" align="center" >
+            <h1 id=jysc class="display-4" align="center" >记忆深处</h1><br>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapseExample">
+              点击展开剧目简介
+            </button>
+          </p>
+          <div class="collapse" id="collapse3">
+            <h4 class="fl">“黑暗中的微光，灵魂在跳舞”。</h4>
+            <p>舞剧《记忆深处》以美籍华裔作家张纯如探索1937年南京大屠杀过程为线索，<br>
+              展现了南京大屠杀亲历者们的回忆。<br>
+              该剧选取屠杀、见证、忏悔、否认等关键词构成相对独立又相互印证的篇章，<br>
+              角度不同但指向同一个真相，<br>
+              既有国际友人还原的历史真相、幸存者无法忘却的伤痛，<br>
+              也有当年日本军人的深切忏悔与日本右翼势力的矢口否认。<br><br>
+              它以“真”为基础，忠于真实人物和事件，<br>
+              把目光投向大屠杀惨案的个体亲历者埋藏深处、触及灵魂的记忆，让最黑暗时刻闪烁的人性光辉成为照亮未来的灯塔。<br></p>
+            <hr  width="60%">
+          </div>
+            <div class="row padding">
+            <div class="col-lg-6"><br><br> <br><br>
+              <img src="dan-jysc1.jpg" class="img-fluid">
+            </div><br>
+            <div class="col-lg-6" align="center">
+              <h2>2021.9.4 上海大宁剧院</h2>
+            <p> 其实我一直都并不太能接受没有完整主线剧情的戏剧，但是这部舞剧是个例外。<br>
+              光是舞者们每个动作、每个表情中溢出的情绪张力就足以牢牢吸引我了。<br>
+              这种强烈的感情冲击大概也只有身处现场，亲眼见证才能够感受得到。<br><br>
+              第一次在现场看唐诗逸跳舞。“灵魂在跳舞”，真可谓是用灵魂起舞的舞者！<br>
+              一袭素衣白裙，柔韧又坚定。<br>
+              面对惨痛历史的心碎、悲怮，无能为力的愤怒、绝望；<br>
+              拿着资料定定地望向远方，眼里泪水还未回流，崩溃慢慢转为坚定，<br>
+              于是化悲愤为力量后以掏空自己为代价开始奋笔疾书；<br>
+              还有面对拒不承认的日本右翼时的不卑不亢，<br>小小的身子里溢出了大于自己几倍的气势和力量...<br>
+              从肢体和眼神里透出来极为饱满又不会用力过度的属于女性作家的脆弱和坚毅，<br>
+              因此你无法不将自己代入她，代入她的心碎，她的勇气，她最终的解脱。<br>
+              不愧是中国歌剧舞剧院首席唐诗逸！<br><br>
+            ————记住历史，并不是为了传递仇恨；记住黑暗，是为了看到光明!<br>
+            会因为这部舞剧而对那段历史有更深刻的理解和认识。</p>
+              <br>
+            </div>
+            <a class="btn btn-primary" href="https://www.bilibili.com/video/BV1RE411b7jp" role="button">点击查看唐诗逸《记忆深处》高光独舞片段（素材来自网络）</a>
+          </div>
+          <hr class="my-4">
+        </div>
+
+
+      <!--- The Contestants -->
+                  <div class="container-fluid">
+                    <h1 id=wz class="display-4" align="center" >我喜欢的舞者</h1><br>
+                  	<div class="row">
+                  		<div class="col-md-4">
+                  			<div class="card text-center">
+                  				<img class="card-img-top" src="zjj.jpg" >
+                  				<div class="card-body">
+                  					<h4 class="card-title">朱洁静</h4>
+                  					<p class="card-text">朱洁静，1985年10月3日出生于浙江省嘉兴市，中国内地古典舞女舞者。
+                              2008年，被上海歌舞团授予首席演员 ；同年，获评国家一级演员。
+                              2016年，主演的舞剧《朱鹮》荣获第10届中国舞蹈“荷花奖”舞剧奖。
+                              2019年，领衔主演的原创舞剧《永不消逝的电波》先后荣获第15届精神文明建设“五个一工程”、第16届中国文化艺术政府奖“文化大奖” 。
+                              2020年，在中央电视台春节联欢晚会上作为领舞表演舞蹈节目《晨光曲》，同年，获得第30届上海白玉兰戏剧表演艺术奖最佳配角奖。
+                              2021年，携舞蹈作品《朱鹮》再次登上了春晚舞台。</p>
+                  					<a href="https://baike.baidu.com/item/%E6%9C%B1%E6%B4%81%E9%9D%99" class="btn btn-outline-info">more</a>
+                  				</div>
+                  			</div>
+                  		</div>
+                      <div class="col-md-4">
+                  			<div class="card text-center">
+                  				<img class="card-img-top" src="wjj.jpg" >
+                  				<div class="card-body">
+                  					<h4 class="card-title">王佳俊</h4>
+                  					<p class="card-text">王佳俊，1984年10月10日出生于上海，毕业于上海戏剧学院舞蹈分院，现任上海歌舞团首席、国家一级演员。
+                            近年来，在舞剧《野斑马》《天边的红云》《霸王别姬》《水月洛神》《朱鹮》等诸多原创舞蹈大戏中担任男一号。  在《中华鼓舞——龙之声》《金舞银饰》《舞台姐妹》等原创舞剧中担任主要角色。
+                            2018年，擢升为上海歌舞团荣典首席艺衔。
+                              2020年9月21日，凭借《永不消逝的电波》获得第30届上海白玉兰戏剧表演艺术奖主角奖提名。
+                              2020年9月29日，凭借《永不消逝的电波》获得第30届上海白玉兰戏剧表演艺术奖主角奖。</p>
+                  					<a href="https://baike.baidu.com/item/%E6%9C%B1%E6%B4%81%E9%9D%99" class="btn btn-outline-info">more</a>
+                  				</div>
+                  			</div>
+                  		</div>
+                  		<div class="col-md-4">
+                  			<div class="card text-center">
+                  				<img class="card-img-top" src="tsy.jpg" width="200px">
+                  				<div class="card-body">
+                  					<h4 class="card-title">唐诗逸</h4>
+                  					<p class="card-text">唐诗逸，1990年9月6日出生于湖南省永州市，毕业于北京舞蹈学院，中国内地古典舞女舞者。
+                              2006年，唐诗逸考入北京舞蹈学院中国古典舞系教育专业；并于同年凭借个人舞《碧雨幽兰》获得“桃李杯”全国舞蹈大赛A级少年甲组女子中国古典舞金奖。
+                              2010年，正式进入中国歌剧舞剧院工作，并在之后成为了该剧院的首席舞者 、国家一级演员 。
+                              2011年，凭借古典舞剧《水月洛神》获得“中国舞蹈荷花奖”舞剧·舞蹈诗比赛个人表演组委会特别奖。
+                              2018年，凭借舞剧《昭君》获得上海白玉兰戏剧表演艺术奖主角提名奖。</p>
+                  					<a href="https://baike.baidu.com/item/%E5%94%90%E8%AF%97%E9%80%B8/9964845" class="btn btn-outline-info">more</a>
+                  				</div>
+                  			</div>
+                  		</div>
+                  	</div>
+                  </div>
+                  <br><br>
+
+<!---这是页码--->
+          <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+          <li class="page-item">
+          <a class="page-link" href="musical.html" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="musical.html">1</a></li>
+          <li class="page-item disabled"><a class="page-link" href="dance.html">2</a></li>
+          <li class="page-item"><a class="page-link" href="livehouse.html">3</a></li>
+          <li class="page-item"><a class="page-link" href="festival.html">4</a></li>
+          <li class="page-item">
+          <a class="page-link" href="livehouse.html" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+          </li>
+          </ul>
+          </nav>
+<!---这是footer-->
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" >
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <img class="site-footer-logo img-responsive" src="logo.png" width="30" data-sr="bottom">
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">2022 © Xu Hanfeng<br>点击右侧图标与我取得联系。</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted" href="https://space.bilibili.com/180483776">  <img class="site-footer-logo img-responsive" src="bilibili.svg" width="30" data-sr="bottom"></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/blackrainbow0914">  <img class="site-footer-logo img-responsive" src="instagram.svg" width="30" data-sr="bottom"></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="https://www.douban.com/people/183813635">  <img class="site-footer-logo img-responsive" src="豆瓣.svg" width="30" data-sr="bottom"></svg></a></li>
+        </ul>
+      </footer>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- 国内 Staticfile CDN 上的 Bootstrap5 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

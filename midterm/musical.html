@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 国内 Staticfile CDN 上的 Bootstrap5 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+
+
+    <title>音乐剧</title>
+  </head>
+
+
+<!---这是导航栏-->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+            <img class=site-logo src="logo.png" width="50">
+        音乐剧
+    </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav" >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">主页</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">舞台演出
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="musical.html">音乐剧</a></li>
+                <li><a class="dropdown-item" href="dance.html">舞剧</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="livehouse.html">Livehouse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="festival.html">音乐节</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <body>
+    <!---这是轮播图-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="#hs">
+                <img src="mu-hs0.jpg" class="d-block w-100" >
+            </a>
+              <div class="carousel-caption d-none d-md-block">
+            <h1>献给阿尔吉侬的花束</h1>
+            <h5>一台好戏Focustage</h5>
+          </div>
+            </div>
+                <div class="carousel-item">
+                <a href="#cx">
+              <img src="mu-cx0.jpg" class="d-block w-100" >
+            </a>
+              <div class="carousel-caption d-none d-md-block">
+            <h1>春之觉醒</h1>
+            <h5>上海文化广场</h5>
+          </div>
+            </div>
+            <div class="carousel-item">
+              <a href="#ms">
+                <img src="mu-ms0.jpg" class="d-block w-100" >
+            </a>
+              <div class="carousel-caption d-none d-md-block">
+            <h1>面试</h1>
+            <h5>SMG上海文广演艺集团</h5>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <a href="#mia">
+                <img src="mu-mia0.jpg" class="d-block w-100" >
+            </a>
+              <div class="carousel-caption d-none d-md-block">
+            <h1>阿波罗尼亚</h1>
+            <h5>一台好戏Focustage</h5>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <a href="#cz">
+              <img src="mu-cz0.jpg" class="d-block w-100" >
+            </a>
+              <div class="carousel-caption d-none d-md-block">
+            <h1>沉默的真相</h1>
+            <h5>缪时文化</h5>
+          </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <br><br><br>
+
+        <!---这是面包屑导航和菜单--->
+                <div class="container-fluid padding" align="center">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">主页</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">音乐剧</li>
+                  </ol>
+                </nav>
+              </div>
+
+              <main class="bd-main order-1">
+
+                  <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+                    <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+                    <nav id="TableOfContents">
+                      <ul>
+                        <li><a href="#hs">《献给阿尔吉侬的花束》</a></li>
+                        <li><a href="#cx">《春之觉醒》</a></li>
+                        <li><a href="#ms">《面试》</a></li>
+                        <li><a href="#mia">《阿波罗尼亚》</a></li>
+                        <li><a href="#cz">《沉默的真相》</a></li>
+                        <li><a href="#yanyuan">我喜欢的音乐剧演员</a></li>
+                      </ul>
+              </nav>
+                  </div>
+
+<!---这是主要内容--->
+        <div class="container-fluid padding" align="center">
+          <h1 id=hs class="display-4 " align="center" >献给阿尔吉侬的花束</h1><br>
+
+          <div class="row padding">
+            <div class="col-lg-6" align="center">
+              <h2>2019.12.21 人民大舞台</h2>
+              <p>看过的质量最高的一部中文版音乐剧之一<br>
+              故事情节 舞台设计 乐队演奏 还有所有演员的发挥 都无可挑剔<br>
+              特意在看剧之前把原著再看了一遍 <br>
+              从日记体的文字变成了舞台上时间虽短暂表演效果却细腻的呈现 <br>
+              主创团队花了很大心思<br>
+              博俊老师的演技和唱功真的一流<br> 对于智力障碍的查理高登术前术后的状态变化也是呈现得惟妙惟肖<br>
+              泪点满满 查理对于自己人的尊严的坚定追求 隐忍的父爱表达 <br>
+              查理智力重回以往后的令人惋惜 无不令人动容<br>
+              学会了用心感受天边彩虹 海风翻浪 更学会了珍惜当下<br>
+              我们不像查理那样不幸生来智力障碍 <br>却也不像他那样拥有几乎是重生的机会 <br>
+              我们唯一能做的 便是牢牢把握自己的生命 书写灿烂人生吧<br><br>
+              ps.是很有缘分的一部剧！从主创见面会到一轮上海，再到北京巡演~
+              <br></p>
+            </div>
+              <div class="col-lg-6"><br><br><br>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="mu-hs1.jpg." class="img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="mu-hs0.jpg" class="img-fluid">
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+                    </div>
+            </div><br>
+            <a class="btn btn-primary" href="https://www.bilibili.com/video/BV1vE411v7nF" role="button">点击查看我拍摄的《献给阿尔吉侬的花束》主创见面会 主题曲首唱</a>
+          </div>
+          <hr class="my-4">
+        </div>
+
+        <div class="container-fluid padding" align="center"  >
+            <h1 id=cx class="display-4  " align="center" >春之觉醒</h1><br>
+
+            <div class="row padding">
+            <div class="col-lg-6">
+              <br><br><br><br><br>
+              <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="mu-cx1.jpg" class="img-fluid">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="mu-cx2.jpg" class="img-fluid">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="mu-cx0.jpg" class="img-fluid">
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                      </div>
+                  </div>
+            </div><br>
+            <div class="col-lg-6" align="center">
+              <h2>2020.1.18 上剧场</h2>
+            <p>   “Haven't you heard the word of your body？”<br>
+            “I’m gonna be wounded     I’m gonna be your wound——”<br>
+            “羞愧是教育的产物”<br><br>
+            凄婉动人的伤痛爱情故事。全剧舞美灯光都超高水准。<br>
+            但最爱的场景还是课堂上那束透过落地窗洒向我那个角度的金色灿烂阳光。<br><br>
+
+            “我一定会创造一个截然不同的世界——”Melchoir如是说。<br>
+            刘师傅在舞台上真的满满少年感啊！<br>
+            丁丁姐声音还是一样的甜 “小瞌睡虫”小胡老师可爱死了~<br>
+            “我能听到你的心跳！我能听到你的呼吸声！无论在哪里！”<br>
+
+            从少男少女间懵懂而破碎的爱情，到家庭暴力甚至是伦理问题，<br>到问题少年的何去何从（甚至谈到了一点点同性恋）<br>
+            虽说发生在100年前的德国 但这个故事在今天看来依然很有意义。<br>
+
+            “没想到我们认识了这么久 还没有好好地聊过天”是全剧最戳我的那句台词。<br>  
+                          <br>
+            一个与剧中相较之下“自由”的时代已经到来， <br>
+            也是时候让自己的思想变得更自由一些啦。<br></p>
+              <br>
+            </div>
+            <a class="btn btn-primary" href="https://www.bilibili.com/video/BV1BE411H71A" role="button">点击查看我拍摄的《春之觉醒》返场片段</a>
+          </div>
+          <hr class="my-4">
+        </div>
+
+            <div class="container-fluid padding" align="center">
+                <h1 id=ms class="display-4 " >面试</h1><br>
+
+                  <div class="row padding">
+                    <div class="col-lg-6" align="center">
+                        <h2>2020.1.11 上海艺海剧院小剧场</h2>
+                        <p>
+                          “当月光洒向远方，又落在安娜贝尔丽梦中央；<br>
+                          当星光倒映湖面上，目光也在波澜中荡漾” <br>
+                          是看过的第一部“人格分裂”音乐剧，也仍是至今最喜欢的一部。<br>
+                          虽然是小剧场而且没有歌词但是完全不影响观看～ <br>
+                          是《声2》喜欢上徐均朔之后去看的他的第一次现场。<br>
+                          他好会演人格分裂！<br>
+                          从孩童般天真的笑容，到对爱的那种带着卑微的渴望，再到化身怪兽一般怒吼，<br>
+                          每一个人格都各具特点和张力。那段五个人格连续切换表演实在看得我太过瘾了！<br>
+                          恩尔姐姐无论是角色的把握还是音色都超级不错，<br>
+                          刚看完的几天内脑海中反复循环《摇篮曲》！<br>
+                          （啊自动联想到了《粉丝来信》的微岚和夏光）<br>
+                          姜彬老师也是一如既往的稳~<br><br>
+                          （看悬疑剧上价值可以但没必要hh <br>
+                          光是听歌和把自己完完全全的投入故事之中就已经足够快乐了！）
+                        </p>
+                      </div>
+                      <div class="col-lg-6">
+                        <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+                          <br><br><br>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="mu-ms2.jpg" class="img-fluid">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="mu-ms0.jpg" class="img-fluid">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="mu-ms1.jpg" class="img-fluid">
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                                </div>
+                            </div>
+                    </div><br>
+                        <a class="btn btn-primary" href="https://www.bilibili.com/video/BV1BE411H7m3" role="button">点击查看我拍摄的《面试》返场片段</a>
+                    </div>
+                  <hr class="my-4">
+                </div>
+
+        <div class="container-fluid padding" align="center"  >
+            <h1 id=mia class="display-4 " align="center" >阿波罗尼亚</h1><br>
+
+            <div class="row padding">
+              <div class="col-lg-6">
+                <br><br><br>
+                <div id="carouselExampleControls4" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="mu-mia3.jpg." class="img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="mu-mia1.jpg" class="img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="mu-mia2.jpg" class="img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="mu-mia0.jpg" class="img-fluid">
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+                    </div>
+            </div><br>
+            <div class="col-lg-6" align="center">
+              <h2>2021.3.7 上海亚洲大厦星空间4号</h2>
+            <p>是真的期待了很久，也寄予了很高期望的阿波罗尼亚<br>
+              OST上架的那周就单循了很久，<br>
+              所以到现场以后，歌都很熟悉，能更加享受表演的部分。<br>
+              即使在山顶位也能拥有和演员们无比直接的眼神接触。<br>
+              随着熟悉的旋律打节拍、尖叫、鼓掌，枪声、酒瓶碰撞声，<br>
+              还有此起彼伏的笑声，一切的烦恼恍若烟消云散。<br>
+              返场时玮伦跑到酒箱台阶上，<br>
+              指挥山顶的我们大喊“Family Knife Music”的时刻实在快乐。<br><br>
+              但是说实话，没有喝酒/饮料，氛围感会差一点。<br>
+              坐在酒箱位，所以观感会差一点<br>（部分台词听不清，左侧舞台的所有动作都看不到）<br>
+              对于完全理解剧情真的构成了很大的障碍。<br><br>
+              下次来小酒馆一定要喝酒，也要带上好朋友一起。<br>
+            </div>
+            <a class="btn btn-primary" href="https://www.bilibili.com/video/BV1Nh411R7BJ" role="button">点击查看主题曲《Mia Famiglia》官方首唱（素材来自一台好戏Focustage官方B站账号）</a>
+          </div>
+          <hr class="my-4">
+        </div>
+
+        <div class="container-fluid padding" align="center">
+            <h1 id=cz class="display-4" >沉默的真相</h1><br>
+
+              <div class="row padding">
+                <div class="col-lg-6" align="center">
+                    <h2>2022.1.13 上海艺海剧院大剧场</h2>
+                    <p>学生票真的太香了！<br>
+
+                    《花》和《迟到的正义》两首歌实在太出彩，刘乙萱太好了。<br>
+                    听几个音就会浑身起鸡皮疙瘩。<br>
+                    会联想到现实生活中那些被侵犯的女孩子们，会很真实地心痛。<br><br>
+
+                    会芳姐姐的《雨夜》也实在是把她的嗓音条件发挥到了极致。<br>
+                    李静太有女人味了，和罗朱里的少女感完全不一样。<br><br>
+
+                    叶麒圣总给我一种坏坏的感觉，但没想到他演这种完全正义的角色也特别合适，<br>
+                    《丢了》真的把我唱得眼眶湿润。<br>
+                    看之前我难以想象怎么会有人对正义这么纯粹、不顾一切地追寻。<br>
+                    看之后，我相信这个世界上一定有很多像江阳一样的人存在。<br><br>
+                    不朽流光 终将刺破长夜。  </p>
+                  </div>
+                  <div class="col-lg-6"><br><br>
+                    <div id="carouselExampleControls5" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="mu-cz1.jpg" class="img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="mu-cz0.jpg" class="img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="mu-cz2.jpg" class="img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="mu-cz3.jpg" class="img-fluid">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                            </div>
+                        </div>
+                </div><br>
+                    <a class="btn btn-primary" href="https://www.bilibili.com/video/BV1Ug411G7oc" role="button">点击查看《沉默的真相》推广曲MV（素材来自缪时文化官方B站）</a>
+                </div>
+              <hr class="my-4">
+            </div>
+
+            <!--- The Contestants -->
+                        <div class="container-fluid">
+                          <h1 id=yanyuan class="display-4" align="center" >我喜欢的音乐剧演员</h1><br>
+                        	<div class="row">
+                        		<div class="col-md-4">
+                        			<div class="card text-center">
+                        				<img class="card-img-top" src="xjs.jpg" >
+                        				<div class="card-body">
+                        					<h4 class="card-title">徐均朔</h4>
+                        					<p class="card-text">徐均朔，1996年12月11日出生于福建省福州市，中国内地流行乐男歌手、音乐剧演员，毕业于上海音乐学院音乐戏剧系。
+                                    2013年参加东方卫视选秀娱乐节目《中国梦之声》，获得全国42强。
+                                    2018年，出演百老汇音乐剧《近乎正常》中文版。
+                                    2019年，以演唱成员的身份参加湖南卫视原创声乐竞演节目《声入人心第二季》，最终成为6位首席演唱者之一。
+                                    同年，出演音乐剧《面试》。
+                                    2020年12月12日，发行个人第一张EP《Loop》。
+                                    2021年出演音乐剧《赵氏孤儿》。</p>
+                        					<a href="https://baike.baidu.com/item/%E5%BE%90%E5%9D%87%E6%9C%94/5832489" class="btn btn-outline-info">more</a>
+                        				</div>
+                        			</div>
+                        		</div>
+                            <div class="col-md-4">
+                        			<div class="card text-center">
+                        				<img class="card-img-top" src="zhf.jpg" >
+                        				<div class="card-body">
+                        					<h4 class="card-title">张会芳</h4>
+                        					<p class="card-text">张会芳，1996年3月5日出生，中国内地音乐剧女演员，
+                                    毕业于北京现代音乐研修学院音乐剧系。
+                                    2016年，凭借音乐剧《蝶》选段《为什么让我爱上了你》获得首届音乐剧学院奖银奖。
+                                    2017年，张会芳在长达两年的中文版音乐剧《变身怪医》演员招募中脱颖而出，最终获得了饰演艾玛的机会。
+                                    后又主演了《长腿叔叔》、《凤凰阿佳与火山神》等多部音乐剧作品。
+                                    2022年，主演中文版音乐剧《罗密欧与朱丽叶》。同年3月12日，参演音乐剧综艺《爱乐之都》。</p>
+                                    <a href="https://baike.baidu.com/item/%E5%BC%A0%E4%BC%9A%E8%8A%B3/10109043" class="btn btn-outline-info">more</a>
+                        				</div>
+                        			</div>
+                        		</div>
+                        		<div class="col-md-4">
+                        			<div class="card text-center">
+                        				<img class="card-img-top" src="yqs.jpg" width="200px">
+                        				<div class="card-body">
+                        					<h4 class="card-title">叶麒圣</h4>
+                        					<p class="card-text">叶麒圣，中国内地音乐剧演员、影视剧演员、歌手 ，毕业于上海视觉艺术学院。
+                                    2020年8月起，叶麒圣因在驻场音乐剧《阿波罗尼亚》中饰演Stevie被人们所熟知。
+                                    同年，参演音乐剧《谋杀歌谣》、《危险游戏》，分别饰演Tom和Richard。
+                                    2021年4月，在音乐剧《陪你倒数》中饰演Jon； 5月，在音乐剧《摇滚浮士德》中饰演X-Black。
+                                    2021年9月，参演中文原创音乐剧《沉默的真相》，饰演江阳一角。
+                                    2022年3月，参加音乐剧综艺《爱乐之都》。</p>
+                        					<a href="https://baike.baidu.com/item/%E5%8F%B6%E9%BA%92%E5%9C%A3/23142190" class="btn btn-outline-info">more</a>
+                        				</div>
+                        			</div>
+                        		</div>
+                        	</div>
+                        </div>
+                        <br><br>
+
+            <!---这是页码--->
+                      <nav aria-label="Page navigation example">
+                      <ul class="pagination justify-content-center">
+                      <li class="page-item disabled">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                      </li>
+                      <li class="page-item  disabled"><a class="page-link" href="musical.html">1</a></li>
+                      <li class="page-item"><a class="page-link" href="dance.html">2</a></li>
+                      <li class="page-item"><a class="page-link" href="livehouse.html">3</a></li>
+                      <li class="page-item"><a class="page-link" href="festival.html">4</a></li>
+                      <li class="page-item">
+                      <a class="page-link" href="dance.html" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                      </li>
+                      </ul>
+                      </nav>
+
+<!---这是footer-->
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" >
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <img class="site-footer-logo img-responsive" src="logo.png" width="30" data-sr="bottom">
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">2022 © Xu Hanfeng<br>你可以点击右侧图标与我取得联系。</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted" href="https://space.bilibili.com/180483776">  <img class="site-footer-logo img-responsive" src="bilibili.svg" width="30" data-sr="bottom"></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/blackrainbow0914">  <img class="site-footer-logo img-responsive" src="instagram.svg" width="30" data-sr="bottom"></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="https://www.douban.com/people/183813635">  <img class="site-footer-logo img-responsive" src="豆瓣.svg" width="30" data-sr="bottom"></svg></a></li>
+        </ul>
+      </footer>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- 国内 Staticfile CDN 上的 Bootstrap5 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

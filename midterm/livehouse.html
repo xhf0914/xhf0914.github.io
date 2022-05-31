@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 国内 Staticfile CDN 上的 Bootstrap5 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+
+
+    <title>Livehouse</title>
+  </head>
+
+<!---这是导航栏-->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+            <img class=site-logo src="logo.png" width="50">
+        Livehouse
+    </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav" >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">主页</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">舞台演出
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="musical.html">音乐剧</a></li>
+                <li><a class="dropdown-item" href="dance.html">舞剧</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="livehouse.html">Livehouse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="festival.html">音乐节</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <body>
+    <!---这是轮播图-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+
+
+            <div class="carousel-item active">
+                <a href="#deca">
+              <img src="live-deca0.jpg" class="d-block w-100" >
+            </a>
+              <div class="carousel-caption d-none d-md-block">
+            <h1>deca joins</h1>
+            <h5>2013年成立，一支来自台湾的迷幻、后摇类独立摇滚乐团</h5>
+          </div>
+            </div>
+
+            <div class="carousel-item">
+              <a href="#chairs">
+                <img src="live-chairs0.jpg" class="d-block w-100" >
+            </a>
+              <div class="carousel-caption d-none d-md-block">
+            <h1>椅子乐团</h1>
+            <h5>2015年成立，一支来自台中的三人编制独立民谣乐团</h5>
+          </div>
+            </div>
+
+            <div class="carousel-item">
+              <a href="#jzh">
+              <img src="live-jzh0.jpg" class="d-block w-100" >
+            </a>
+              <div class="carousel-caption d-none d-md-block">
+            <h1>橘子海</h1>
+            <h5>2012年成立，一支来自山东青岛的英伦摇滚(Britpop)乐队</h5>
+          </div>
+            </div>
+
+            <div class="carousel-item">
+              <a href="#whzl">
+                <img src="live-whzl0.jpg" class="d-block w-100" >
+            </a>
+              <div class="carousel-caption d-none d-md-block">
+            <h1>温和治疗MILDCURE</h1>
+            <h5>2019年成立于北京，曲风融合了后英式摇滚、电子放克和爵士</h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <br><br><br>
+
+        <!---这是面包屑导航和菜单--->
+                <div class="container-fluid padding" align="center">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">主页</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Livehouse</li>
+                  </ol>
+                </nav>
+              </div>
+
+              <main class="bd-main order-1">
+
+                  <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+                    <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+                    <nav id="TableOfContents">
+                      <ul>
+                        <li><a href="#deca">deca joins</a></li>
+                        <li><a href="#chairs">椅子乐团</a></li>
+                        <li><a href="#jzh">橘子海</a></li>
+                        <li><a href="#whzl">温和治疗MILDCURE</a></li>
+                      </ul>
+              </nav>
+                  </div>
+
+<!---这是主要内容--->
+
+        <div class="container-fluid padding" align="center">
+          <h1 id=deca class="display-4 " align="center" >deca joins</h1><br>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapseExample">
+            点击展开乐队简介
+          </button>
+        </p>
+        <div class="collapse" id="collapse2">
+          <h4 class="fl">“终于忘记你的时候你出现在我的梦里”</h4>
+          <p>
+            Deca Joins，中国台湾乐团，<br>
+            由主唱郑敬儒、吉他手杨尚桦、贝斯手谢俊彦、鼓手陆浩钊四名成员组成。<br>
+            2013年，Deca Joins正式成立。2017年，发行首张全创作专辑《浴室》。<br>
+            2018年，发行迷你专辑《Go Slow》。2019年，发行创作EP《雾散去的时候》。<br>
+            2020年，发行第二张全创作专辑《鸟鸟鸟》，并凭借该专辑获得第32届台湾金曲奖最佳乐团奖提名。<br>
+          </p>
+            <img src="deca.png" height="300px">
+            <hr  width="60%">
+        </div>
+        <br>
+          <div class="row padding">
+            <div class="col-lg-6" align="center">
+              <h2>2021.5.24 北京糖果三层</h2>
+              <p>-德卡究尹-<br>
+                xhf把太多心情都藏在了郑敬儒的歌声里，<br>
+                所以对于deca的现场有着一种近乎偏执的向往。<br>
+                从漫漫长夜、浴室、夏夜晚风，到乏善可陈、海浪，<br>
+                再到最后一首只有器乐伴奏但全场齐唱的巫堵，感触实在太深，<br>
+                每首歌都不偏不倚地戳中内心最柔软的地方，<br>
+                也勾起一段只属于自己的回忆。<br>
+                谢谢郑敬儒。长发戴眼镜的台湾男人实在太有魅力。<br>
+                也谢谢谢俊彦，谢谢杨尚烨，谢谢陈皇谷。<br>
+                最后 祝自己“每一天都很快乐——”<br>
+                （签售和合照的时候也真的很快乐啦！）
+              <br></p>
+            </div>
+              <div class="col-lg-6">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="live-deca1.jpg." class="img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="deca1.png" class="img-fluid">
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+                    </div>
+            </div><br>
+            <a class="btn btn-primary" href="https://www.bilibili.com/video/BV1ao4y1179p" role="button">点击查看我拍摄的deca joins演出片段</a>
+          </div>
+          <hr class="my-4">
+        </div>
+
+        <div class="container-fluid padding" align="center"  >
+            <h1 id=chairs class="display-4 " align="center" >椅子乐团</h1><br>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapseExample">
+              点击展开乐队简介
+            </button><br><br>
+          <div class="collapse" id="collapse3">
+            <h4 class="fl">“清唱着wim-wom-wom-bo，再rollin', rollin' on”。</h4>
+            <p>椅子乐团（The Chairs）为中国台湾三人编制乐队，由主唱兼吉他手咏靖、主唱兼吉他手仲颖以及贝斯手伯元组成。 <br>
+              2016年3月3日，发行首张专辑《Cheers！Land》，椅子乐团凭借该专辑获得金音创作奖最佳新人奖、最佳民谣专辑奖及最佳民谣单曲奖三项提名。<br>
+              2018年2月27日，发行单曲《建议是看开点》；6月29日，发行第二张专辑《乐芙莉圣代》，并凭借该专辑获得第30届台湾金曲奖最佳演唱组合奖。<br>
+              2019年6月28日，发行英语EP《Lemonade》；4月8日，发行英语专辑《TheChairs on Audiotree Live》 ；5月29日，发行单曲《Paradise…How Far？》。<br>
+              2020年参与综艺《乐队的夏天2》。</p>
+                <img src="chairs.png" height="300px">
+                <hr  width="60%">
+          </div><br>
+
+            <div class="row padding">
+            <div class="col-lg-6">
+              <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="live-chairs1.jpg." class="img-fluid">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="live-chairs2.jpg" class="img-fluid">
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                      </div>
+                  </div>
+            </div><br>
+            <div class="col-lg-6" align="center">
+              <h2>2021.6.6 北京糖果三层</h2>
+            <p> 好像对来自台北的乐队有莫名的偏爱<br>
+              但和郑敬儒有一点点颓的迷人嗓音完全不一样的是<br>
+              咏靖和仲颖的声音总给人一种慵懒的惬意，还有“温柔”。<br>
+              自然而悦耳的和声就是最最治愈的良药。<br>
+              几首闽南语的歌曲完全不需要听懂，随着音乐慢慢摇动就会很快乐。<br>
+              听他们分享创作的故事，自己的生活经历也随之浮现在脑海中。<br>
+              想到椅子，就感觉无论多忙碌的生活都可以“走得更缓慢”<br>
+              这就是所谓的Chill吧。<br>
+              那天还见到了从上海来北京玩的高中同学皮皮，跟她聊了很多。<br>
+              捡回了很多褪色的高中记忆。<br>
+              那一夜真美啊。</p>
+              <br>
+            </div>
+            <a class="btn btn-primary" href="https://www.bilibili.com/video/BV1mB4y1T7de" role="button">点击查看我拍摄的椅子乐团演出片段</a>
+          </div>
+          <hr class="my-4">
+        </div>
+
+            <div class="container-fluid padding" align="center">
+                <h1 id=jzh class="display-4 " >橘子海</h1><br>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapseExample">
+                   点击展开乐队简介
+                 </button><br><br>
+                 <div class="collapse" id="collapse1">
+                   <h4 class="fl">這 一 腳 踢 出 了 整 個 盛 夏</h4>
+                   <p>OrangeOcean橘子海，2012年于青岛成立，乐队由主唱/吉他2KM、鼓手卿溪、贝斯手小路组成。<br>
+                     Brit-pop一直以来是乐队创作的风格主线，深受英式摇滚黄金年代影响的他们将内化的自我意识与世界观融合其中，<br>在Brit-pop日渐式微的今天坚定地进行着英式摇滚新可能的孜孜探索。<br>
+                     通过耐心的生活体会与自我洞察，逐步形成了“浪潮”涌向岸边的内在动力。<br>
+                     裹挟着北方海岸的独特气息，他们的音乐带着坚硬与棱角，也暗藏情愫与温情。<br>
+                     2019年，橘子海Orange Ocean发行了首张正式专辑《浪潮上岸》。<br>
+                     2020年受邀担任易烊千玺单曲《冷静和热情之间》的编曲和制作人。2021底发布全新EP《EXCEL》。</p>
+                     <img src="jzh.png" height="300px">
+                     <hr  width="60%">
+                    </div>
+                    <br>
+                  <div class="row padding">
+                    <div class="col-lg-6" align="center">
+                        <h2>2021.6.17 北京糖果三层</h2>
+                        <p>“暖气入侵——”<br>
+                          总算是在夏天到来之际听到了最最夏天的橘子海。<br>
+                          20年的秋天，在麦田音乐节看过橘子海的现场之后就一直对他们念念不忘。<br>
+                          终于等到了巡演的消息。提前两个月掐着点抢到了票，又在小助手上约到了朋友。<br>
+                          为了迎接夏天，特地穿了最夏天的港风印花衬衫。<br>
+
+                          印象最深的还是《Vodka》的玩球part。<br>
+                          所有人翘首以盼大球来到头顶，然后伸长手臂去拍它。<br>
+                          这样的体验大概在livehouse之外的任何地方都没办法感受到。<br><br>
+                          橘子海的音乐氛围感很强，现场的布置也很好地反映了这种音乐上的特点。<br>
+                          比如《Orange Ocean》，舞台被白色的布完全蒙起来，背光照射下，乐队成员们以摇曳而朦胧的影子形式出现。<br>
+                          也超级喜欢最后一首《How to》的灯光设计。一束束橘黄色顶灯直射向舞台，也射向观众。“How to confess your love”之前在网易云单循了好久，可都没有注意过这首歌的歌词居然是如此浪漫。<br>
+
+                          （小声…虽然氛围很好但是坤明的唱功实在一言难尽…几首新歌也好一般喔…<br>
+
+                          但总体而言，橘子海的livehouse还是好浪漫。<br>
+                          想再在现场看一次橘子海，跟喜欢的人一起。<br>
+
+                        </p>
+                      </div>
+                      <div class="col-lg-6">
+                        <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+                            <br><br><br><br><br><div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="live-jzh0.jpg" class="img-fluid">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="live-jzh1.jpg" class="img-fluid">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="live-jzh2.jpg" class="img-fluid">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="live-jzh3.jpg" class="img-fluid">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="live-jzh5.jpg" class="img-fluid">
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                                </div>
+                            </div>
+                    </div><br>
+                        <a class="btn btn-primary" href="https://www.bilibili.com/video/BV1Dy4y1T7zP" role="button">点击查看我拍摄的橘子海演出片段</a>
+                    </div>
+                  <hr class="my-4">
+                </div>
+
+        <div class="container-fluid padding" align="center"  >
+            <h1 id=whzl class="display-4 " align="center" >温和治疗MILDCURE</h1><br>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapseExample">
+              点击展开乐队简介
+            </button><br>
+          <div class="collapse" id="collapse4">
+            <br>
+            <h4 class="fl">“八块钱买绿豆冰”。</h4>
+            <p>温和治疗乐队于2019年成立于北京，由主唱/吉他手腹黑、贝斯手阿苏、鼓手小峰组成。<br>
+              他们好像是一管浪漫又甜蜜的药剂，<br>
+              把后英式摇滚的梦幻迷离、电子放克的摩登复古、爵士的慵懒舒缓恰到好处地融合在了音乐里，<br>
+              在声音里互相交替传递“爱”这个词最用力的情绪。<br></p>
+              <img src="whzl.png" height="300px">
+              <hr  width="60%">
+          </div>
+          <br>
+            <div class="row padding">
+              <br><br>
+              <div class="col-lg-6">
+                <br><br>
+                <div id="carouselExampleControls4" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="live-whzl1.jpg." class="img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="live-whzl2.jpg" class="img-fluid">
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+                    </div>
+
+            </div><br>
+            <div class="col-lg-6" align="center">
+              <h2>2021.10.21 北京疆进酒</h2>
+            <p>是温和治疗呀~
+              <br>记得最早认识他们是从网易云的日推。<br>后来同寝室的张张把他们的一首歌设为了起床铃声。慢慢地，好像离不开那样令人愉悦的旋律了。<br>
+              这次livehouse也是跟张张一起去的。<br>
+              超级喜欢贝斯手苏苏，她真的好可爱好可爱哦，声音也好甜~<br>只有在livehouse里才能听到苏苏唱歌！<br>
+              喜欢听朱腹黑讲他们的创作历程。<br>后来也因为《花园》这首歌而去看了《香水》这部电影。<br>
+              唱《星河》之前会特意叮嘱我们要在“牵起你的手 奔向浩瀚星河”的时候牵起旁边爱人的手，这也更坚定了我以后想带喜欢的男生来看他们的想法。<br>
+              最喜欢的可能还要数《八块钱买绿豆冰》了。7月一个人去阿那亚的时候疯狂循环的歌，在现场跟着蹦实在是很快乐。即使已经是深秋了，还是能一下子把我拉回那个阿那亚的夏天。<br>
+            </p>
+              <br>
+            </div>
+            <a class="btn btn-primary" href="https://www.bilibili.com/video/BV1N84y1c7A4" role="button">点击查看温和治疗演出片段（素材来自温和治疗官方B站账号）</a>
+          </div>
+          <hr class="my-4">
+        </div>
+
+        <!---这是页码--->
+                  <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                  <a class="page-link" href="dance.html" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="musical.html">1</a></li>
+                  <li class="page-item"><a class="page-link" href="dance.html">2</a></li>
+                  <li class="page-item disabled"><a class="page-link" href="livehouse.html">3</a></li>
+                  <li class="page-item"><a class="page-link" href="festival.html">4</a></li>
+                  <li class="page-item">
+                  <a class="page-link" href="festival.html" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                  </li>
+                  </ul>
+                  </nav>
+
+<!---这是footer-->
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" >
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <img class="site-footer-logo img-responsive" src="logo.png" width="30" data-sr="bottom">
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">2022 © Xu Hanfeng<br>点击右侧图标与我取得联系。</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted" href="https://space.bilibili.com/180483776">  <img class="site-footer-logo img-responsive" src="bilibili.svg" width="30" data-sr="bottom"></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/blackrainbow0914">  <img class="site-footer-logo img-responsive" src="instagram.svg" width="30" data-sr="bottom"></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="https://www.douban.com/people/183813635">  <img class="site-footer-logo img-responsive" src="豆瓣.svg" width="30" data-sr="bottom"></svg></a></li>
+        </ul>
+      </footer>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- 国内 Staticfile CDN 上的 Bootstrap5 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
